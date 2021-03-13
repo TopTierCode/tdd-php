@@ -16,26 +16,28 @@
  */
 declare(strict_types=1);
 
-namespace TopTierCode\tddphp\ChapterEight\G;
+namespace TopTierCode\tddphp\ChapterNine\C;
 
 /**
- * Class Money - From page 36, part three
+ * Class Dollar - From page 40, part 2
  */
-abstract class Money
+class Dollar extends Money
 {
-    protected int $amount;
-
-    public abstract function times(int $multiplier): Money;
+    private string $currency;
     
-    public function equals(object $object): bool
+    public function __construct(int $amount)
     {
-        // This example differs because the type casting in PHP is not the same as java.
-        $money = $object instanceof Money ? $object : null;
-        return $this->amount === $money->amount && get_class($this) === get_class($money);
+        $this->amount = $amount;
+        $this->currency = 'USD';
     }
 
-    public static function dollar(int $amount): Money
+    public function times(int $multiplier): Money
     {
-        return new Dollar($amount);
+        return new Dollar($this->amount * $multiplier);
+    }
+
+    public function currency(): string
+    {
+        return $this->currency;
     }
 }

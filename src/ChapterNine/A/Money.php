@@ -16,17 +16,17 @@
  */
 declare(strict_types=1);
 
-namespace TopTierCode\tddphp\ChapterEight\G;
+namespace TopTierCode\tddphp\ChapterNine\A;
 
 /**
- * Class Money - From page 36, part three
+ * Class Money - From page 37
  */
 abstract class Money
 {
     protected int $amount;
-
-    public abstract function times(int $multiplier): Money;
     
+    public abstract function times(int $multiplier): Money;
+
     public function equals(object $object): bool
     {
         // This example differs because the type casting in PHP is not the same as java.
@@ -37,5 +37,10 @@ abstract class Money
     public static function dollar(int $amount): Money
     {
         return new Dollar($amount);
+    }
+
+    public static function franc(int $amount): Money
+    {
+        return new Franc($amount);
     }
 }

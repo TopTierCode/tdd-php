@@ -25,7 +25,7 @@ abstract class Money
 {
     protected int $amount;
 
-    public abstract function times(int $amount): Money;
+    public abstract function times(int $multiplier): Money;
     
     public function equals(object $object): bool
     {
