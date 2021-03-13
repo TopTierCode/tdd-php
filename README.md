@@ -3,6 +3,12 @@
 # TDD PHP
 [Test Driven Development by Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck) PHP Code samples
 
+## Requirements
+1. PHP 8.0 or above
+2. [Composer](https://getcomposer.org/)
+
+## Setup
+Run composer install. 
 ## How to use this project
 Each chapter contains its own folder. Each time EITHER the test OR the 
 implementing class are modified in the book, a new folder was created.
