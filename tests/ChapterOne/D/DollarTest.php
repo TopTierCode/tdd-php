@@ -16,26 +16,21 @@
 
 declare(strict_types=1);
 
-namespace TopTierCode\tddphp\tests\ChapterTwo\B;
+namespace TopTierCode\tddphp\tests\ChapterOne\D;
 
 use PHPUnit\Framework\TestCase;
-use TopTierCode\tddphp\ChapterTwo\B\Dollar;
+use TopTierCode\tddphp\ChapterOne\D\Dollar;
 
 /**
- * Class TestDollar - From page 12, part 2
+ * Class DollarTest - From page 4
  */
-class TestDollar extends TestCase
+class DollarTest extends TestCase
 {
-
-    /**
-     * @group skip
-     */
+   
     public function testMultiplication(): void
     {
         $five = new Dollar(5);
-        $product = $five->times(2);
-        $this->assertEquals(10, $product->amount);
-        $product = $five->times(3);
-        $this->assertEquals(15, $product->amount);
+        $five->times(2);
+        $this->assertEquals(10, $five->amount);
     }
 }

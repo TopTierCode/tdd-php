@@ -16,15 +16,15 @@
 
 declare(strict_types=1);
 
-namespace TopTierCode\tddphp\tests\ChapterOne\E;
+namespace TopTierCode\tddphp\tests\ChapterOne\B;
 
 use PHPUnit\Framework\TestCase;
-use TopTierCode\tddphp\ChapterOne\E\Dollar;
+use TopTierCode\tddphp\ChapterOne\B\Dollar;
 
 /**
- * Class TestDollar - From page 4
+ * Class DollarTest - From page 4
  */
-class TestDollar extends TestCase
+class DollarTest extends TestCase
 {
    
     public function testMultiplication(): void
