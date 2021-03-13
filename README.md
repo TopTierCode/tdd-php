@@ -1,7 +1,8 @@
 ![PHPUnit](https://github.com/TopTierCode/tdd-php/workflows/PHPUnit/badge.svg?branch=master)
 
 # TDD PHP
-[Test Driven Development by Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck) PHP Code samples
+[Test Driven Development by Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) 
+(by [Kent Beck](https://twitter.com/KentBeck)) PHP Code samples
 
 ## Requirements
 1. PHP 8.0 or above
