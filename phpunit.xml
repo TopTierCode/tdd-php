@@ -1,0 +1,26 @@
+<phpunit backupGlobals="true" bootstrap="bootstrap.php">
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <groups>
+        <exclude>
+            <group>skip</group>
+        </exclude>
+    </groups>
+    <coverage
+            includeUncoveredFiles="false"
+            processUncoveredFiles="false"
+            pathCoverage="false"
+            ignoreDeprecatedCodeUnits="true"
+            disableCodeCoverageIgnore="true"
+    >
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <text outputFile="tests/coverage.txt" showUncoveredFiles="false" showOnlySummary="false"/>
+        </report>
+    </coverage>
+</phpunit>

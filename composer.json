@@ -1,5 +1,21 @@
 {
+    "require" : {
+        "php": ">=8.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "^9"
+    },
+    "name": "toptiercode/php-tdd",
+    "description": "Test Driven Development by Example PHP edition",
+    "authors": [
+        {
+            "name": "Jeremy Presutti",
+            "role": "Developer"
+        }
+    ],"autoload": {
+    "psr-4": {
+        "TopTierCode\\tddphp\\": "src/",
+        "TopTierCode\\tddphp\\tests\\": "tests/"
     }
+}
 }
