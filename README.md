@@ -1,3 +1,5 @@
+![PHPUnit](https://github.com/TopTierCode/tdd-php/workflows/PHPUnit/badge.svg?branch=master)
+
 # TDD PHP
 [Test Driven Development by Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck) PHP Code samples
 
