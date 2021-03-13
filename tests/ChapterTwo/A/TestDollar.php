@@ -30,7 +30,7 @@ class TestDollar extends TestCase
     /**
      * @group skip
      */
-    public function testMultiplication()
+    public function testMultiplication(): void
     {
         $five = new Dollar(5);
         $five->times(2);

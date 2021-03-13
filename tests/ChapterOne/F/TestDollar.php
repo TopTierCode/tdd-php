@@ -26,8 +26,8 @@ use TopTierCode\tddphp\ChapterOne\F\Dollar;
  */
 class TestDollar extends TestCase
 {
-   
-    public function testMultiplication()
+
+    public function testMultiplication(): void
     {
         $five = new Dollar(5);
         $five->times(2);

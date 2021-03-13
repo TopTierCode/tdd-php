@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2021 Jeremy Presutti <Jeremy@Presutti.us>
  *
@@ -13,29 +14,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 declare(strict_types=1);
 
-namespace TopTierCode\tddphp\tests\ChapterTwo\B;
-
-use PHPUnit\Framework\TestCase;
-use TopTierCode\tddphp\ChapterTwo\B\Dollar;
+namespace TopTierCode\tddphp\ChapterThree\A;
 
 /**
- * Class TestDollar - From page 12, part 2
+ * Class Dollar - From page 13
  */
-class TestDollar extends TestCase
+class Dollar
 {
+    public int $amount;
 
-    /**
-     * @group skip
-     */
-    public function testMultiplication(): void
+    public function __construct(int $amount)
     {
-        $five = new Dollar(5);
-        $product = $five->times(2);
-        $this->assertEquals(10, $product->amount);
-        $product = $five->times(3);
-        $this->assertEquals(15, $product->amount);
+        $this->amount = $amount;
+    }
+
+    public function times(int $multiplier): Dollar
+    {
+        return new Dollar($this->amount * $multiplier);
     }
 }
