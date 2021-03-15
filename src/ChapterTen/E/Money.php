@@ -24,15 +24,16 @@ namespace TopTierCode\tddphp\ChapterTen\E;
 class Money
 {
 
+    protected int $amount;
+
+    protected string $currency;
+
     public function __construct(int $amount, string $currency)
     {
         $this->amount = $amount;
         $this->currency = $currency;
     }
 
-    protected int $amount;
-
-    protected string $currency;
 
     public function times(int $multiplier): ?Money {
         return null;
