@@ -1,4 +1,4 @@
-<phpunit backupGlobals="true" bootstrap="bootstrap.php">
+<phpunit backupGlobals="true" bootstrap="bootstrap.php" cacheResult="false">
     <testsuites>
         <testsuite name="unit">
             <directory>tests</directory>
@@ -19,8 +19,6 @@
         <include>
             <directory suffix=".php">src</directory>
         </include>
-        <report>
-            <text outputFile="tests/coverage.txt" showUncoveredFiles="false" showOnlySummary="false"/>
-        </report>
+        
     </coverage>
 </phpunit>
