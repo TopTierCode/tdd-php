@@ -31,7 +31,7 @@ abstract class Money
     {
         // This example differs because the type casting in PHP is not the same as java.
         $money = $object instanceof Money ? $object : null;
-        return $this->amount === $money->amount && get_class($this) === get_class($money);
+        return $money !== null && $this->amount === $money->amount && get_class($this) === get_class($money);
     }
 
     public static function dollar(int $amount): Money

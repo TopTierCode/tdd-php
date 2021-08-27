@@ -37,6 +37,6 @@ class Dollar extends Money
     {
         // This example differs because the type casting in PHP is not the same as java.
         $dollar = $object instanceof Dollar ? $object : null;
-        return $this->amount === $dollar->amount;
+        return $dollar !== null && $this->amount === $dollar->amount;
     }
 }

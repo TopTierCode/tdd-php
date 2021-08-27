@@ -48,7 +48,7 @@ class Money implements Expression
     {
         // This example differs because the type casting in PHP is not the same as java.
         $money = $object instanceof Money ? $object : null;
-        return $this->amount === $money->amount && $this->currency === $money->currency;
+        return $money !== null && $this->amount === $money->amount && $this->currency === $money->currency;
     }
 
     public static function dollar(int $amount): Money

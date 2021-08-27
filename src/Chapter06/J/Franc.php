@@ -38,6 +38,6 @@ class Franc extends Money
     {
         // This example differs because the type casting in PHP is not the same as java.
         $money = $object instanceof Money ? $object : null;
-        return $this->amount === $money->amount;
+        return $money !== null && $this->amount === $money->amount;
     }
 }
