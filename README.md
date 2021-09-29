@@ -16,3 +16,5 @@ implementing class are modified in the book, a new folder was created.
 The changes are linear. When either the implementation or test file is
 modified, a new folder (A,B,C etc) is created. Any test that will fail
 is marked as skipped. This ensures that ci will still pass every push.
+
+[Contributors](contributors.md)
